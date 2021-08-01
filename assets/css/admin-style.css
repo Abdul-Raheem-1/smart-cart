@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;display=swap");
+* {
+    user-select: none;
+}
 
-.min-height-a{
+.min-height-a {
     min-height: auto !important;
 }
 
@@ -1013,7 +1016,7 @@ textarea.form-control {
     line-height: 50px;
     font-size: 22px;
     margin: 25px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -5903,7 +5906,42 @@ body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active ul.dropdown-men
     content: "\ea06";
 }
 
-.table-app{
+.table-app {
     height: 70vh;
     overflow: auto;
+}
+
+.prd_carousel_main_wrapper {
+    overflow: auto;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.prd_carousel_main_wrapper>.prd_carousel_main {
+    padding: 20px;
+}
+
+.prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item {
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item:last-child {
+    margin-right: 0px;
+}
+
+.prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_name {
+    font-weight: 700;
+}
+
+.prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_name, .prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_price, .prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_sale, .prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_details_btn {
+    display: block;
+    margin-top: 7px;
+}
+
+.prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_sale {
+    font-size: 12px;
 }

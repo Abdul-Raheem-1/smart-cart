@@ -57,6 +57,81 @@ $brand = $db->get_entity('brand', $url_id);
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="prd_carousel_main_wrapper" id="prd_carousel_main_wrapper">
+                                    <div class="prd_carousel_main" id="prd_carousel_main">
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                        <div class="carousel_item">
+                                            <span class="prd_name">Danedar 500mg</span>
+                                            <span class="prd_price">Rs. 650</span>
+                                            <span class="prd_sale">86 Sold</span>
+                                            <input type="button" class="btn btn-primary w-100 prd_details_btn" value="Details">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
 
@@ -89,8 +164,8 @@ $brand = $db->get_entity('brand', $url_id);
     <!-- Template JS File -->
     <script src="js/scripts.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/custom_script.js"></script>
 </body>
 
-<!-- blank.html  Tue, 07 Jan 2020 03:35:42 GMT -->
 
 </html>
