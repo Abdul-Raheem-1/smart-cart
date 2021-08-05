@@ -51,7 +51,7 @@ if (isset($_POST["add"])) {
 
                                     </div>
                                     <div class="form-group">
-                                        <input required type="submit" value="Add Cart" name="add" class="btn btn-secondary">
+                                        <input required type="submit" value="Add Cart" name="add" class="btn btn-secondary add_cart_btn">
                                     </div>
                             </div>
                             </form>

@@ -5945,3 +5945,7 @@ body:not(.sidebar-mini) .sidebar-style-3 .sidebar-menu li.active ul.dropdown-men
 .prd_carousel_main_wrapper>.prd_carousel_main>.carousel_item>.prd_sale {
     font-size: 12px;
 }
+.add_cart_btn {
+    margin: 0px 25px 0px auto;
+    display: block;
+}

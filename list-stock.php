@@ -47,7 +47,6 @@ session_start();
                                                 <tr>
                                                     <th>Product Name</th>
                                                     <th>Quantity</th>
-                                                    <th>Action</th>
                                                 </tr>
                                                 <?php
                                                 $res = $db->get_entities('stock');
