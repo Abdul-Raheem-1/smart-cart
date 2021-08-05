@@ -24,17 +24,14 @@ session_start();
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Products List</h1>
+                        <h1>Products Sales List</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="admin-index.php">Dashboard</a></div>
-                            <div class="breadcrumb-item">Products List</div>
+                            <div class="breadcrumb-item">Products Sales List</div>
                         </div>
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Products</h2>
-                        <p class="section-lead">Here are all the registered Products.</p>
-
                         <div class="row">
                             <div class="col-12 col-md-12 col-lg-12">
                                 <div class="card">
@@ -47,11 +44,10 @@ session_start();
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Name</th>
-                                                    <th>Barcode</th>
-                                                    <th>Price</th>
-                                                    <th>Weight</th>
                                                     <th>Brand</th>
                                                     <th>Category</th>
+                                                    <th>Price</th>
+                                                    <th>Discount</th>
                                                 </tr>
                                                 <?php
                                                 $res = $db->get_entities('product');
@@ -60,17 +56,25 @@ session_start();
                                                     <tr>
                                                         <td><?= $row["id"] ?></td>
                                                         <td><?= $row["name"] ?></td>
-                                                        <td><?= $row["barcode"] ?></td>
-                                                        <td>PKR <?= $row["price"] ?></td>
-                                                        <td><?= $row["weight"] ?> kg</td>
-                                                        <td><?php 
+                                                        <td>
+                                                            <?php
                                                             $brand_id = $row["brand_id"];
                                                             echo $db->get_entity('brand', $brand_id)["name"];
-                                                        ?></td>
-                                                        <td><?php 
+                                                            ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php
                                                             $category_id = $row["category_id"];
                                                             echo $db->get_entity('category', $category_id)["name"];
-                                                        ?></td>
+                                                            ?>
+                                                        </td>
+                                                        <td><?= $row["price"] ?> kg</td>
+                                                        <td>
+                                                            <?php
+                                                            $discount_id = $row["product_id"];
+                                                            echo $db->get_entity('discount', $discount_id)["name"];
+                                                            ?>
+                                                        </td>
                                                     </tr>
                                                 <?php }
                                                 if ($res->num_rows == 0) {

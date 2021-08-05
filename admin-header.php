@@ -58,7 +58,7 @@ $user = $db->get_entity('user', $id);
                         <li><a class="nav-link" href="list-stock.php">Stock</a></li>
                         <li><a class="nav-link" href="list-cart.php">Carts</a></li>
                         <li><a class="nav-link" href="list-sale.php">Sales</a></li>
-                        <li><a class="nav-link" href="list-sale.php">Discounts</a></li>
+                        <li><a class="nav-link" href="list-discounts.php">Discounts</a></li>
                     <?php
                     ?>
                     <li class="dropdown">

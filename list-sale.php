@@ -24,17 +24,14 @@ session_start();
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Products List</h1>
+                        <h1>Products Sales List</h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="admin-index.php">Dashboard</a></div>
-                            <div class="breadcrumb-item">Products List</div>
+                            <div class="breadcrumb-item">Products Sales List</div>
                         </div>
                     </div>
 
                     <div class="section-body">
-                        <h2 class="section-title">Products</h2>
-                        <p class="section-lead">Here are all the registered Products.</p>
-
                         <div class="row">
                             <div class="col-12 col-md-12 col-lg-12">
                                 <div class="card">
@@ -52,6 +49,7 @@ session_start();
                                                     <th>Weight</th>
                                                     <th>Brand</th>
                                                     <th>Category</th>
+                                                    <th>Sale</th>
                                                 </tr>
                                                 <?php
                                                 $res = $db->get_entities('product');
@@ -71,6 +69,7 @@ session_start();
                                                             $category_id = $row["category_id"];
                                                             echo $db->get_entity('category', $category_id)["name"];
                                                         ?></td>
+                                                        <td><?=$row["times_sold"];?></td>
                                                     </tr>
                                                 <?php }
                                                 if ($res->num_rows == 0) {
